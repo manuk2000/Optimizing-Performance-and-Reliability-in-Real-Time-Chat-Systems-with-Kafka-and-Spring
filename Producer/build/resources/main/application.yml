@@ -1,0 +1,15 @@
+spring:
+  kafka:
+    topic: "chat-events"
+    producer:
+      bootstrap-servers: ${BROKER_ONE_HOST:localhost}:${BROKER_ONE_PORT:9092}, ${BROKER_TWO_HOST:localhost}:${BROKER_TWO_PORT:9092},, ${BROKER_THREE_HOST:localhost}:${BROKER_THREE_PORT:9092},
+      key-serializer: org.apache.kafka.common.serialization.IntegerSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+    properties:
+      retries: 6
+    admin:
+      properties:
+        bootstrap-servers: ${BROKER_ONE_HOST:localhost}:${BROKER_ONE_PORT:9092}, ${BROKER_TWO_HOST:localhost}:${BROKER_TWO_PORT:9092},, ${BROKER_THREE_HOST:localhost}:${BROKER_THREE_PORT:9092},
+
+server:
+  port: ${SERVER_PORT:8002}
