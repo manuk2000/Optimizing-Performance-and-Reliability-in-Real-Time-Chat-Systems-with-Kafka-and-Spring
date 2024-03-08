@@ -13,8 +13,9 @@ This project demonstrates a simple Kafka event streaming system with MySQL datab
 
 1. **Clone the Repository:**
 
-   ```bash
-   https://github.com/manuk2000/Optimizing-Performance-and-Reliability-in-Real-Time-Chat-Systems-with-Kafka-and-Spring.git   ```
+   ```bash   
+   https://github.com/manuk2000/Optimizing-Performance-and-Reliability-in-Real-Time-Chat-Systems-with-Kafka-and-Spring.git
+   ```
 
 2. **Run Docker Compose:**
 
