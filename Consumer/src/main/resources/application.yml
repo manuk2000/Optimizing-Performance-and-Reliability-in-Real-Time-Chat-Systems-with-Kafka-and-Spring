@@ -1,0 +1,24 @@
+
+spring:
+  datasource:
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:${MYSQL_PORT:3306}/${DATABASES:message?createDatabaseIfNotExist=true}
+    username: ${MYSQL_USER:root}
+    password: ${MYSQL_PASSWORD:root}
+    driverClassName: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        show_sql: true
+    open-in-view: true
+
+
+  kafka:
+    consumer:
+      bootstrap-servers: ${BROKER_ONE_HOST:localhost}:${BROKER_ONE_PORT:9092}, ${BROKER_TWO_HOST:localhost}:${BROKER_TWO_PORT:9092},, ${BROKER_THREE_HOST:localhost}:${BROKER_THREE_PORT:9092},
+      key-deserializer: org.apache.kafka.common.serialization.IntegerDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      group-id: events-listener-group
+server:
+  port: ${SERVER_PORT:8001}

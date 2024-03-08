@@ -1,0 +1,9 @@
+{
+"eventKey": 123,
+"message": {
+"type": "CHAT",
+"content": "Hello, World!",
+"sender": "Jon"
+}
+}
+

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Consumer.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Consumer.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Producer.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Producer.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/chatWebSocket.main.iml" filepath="$PROJECT_DIR$/.idea/modules/chatWebSocket.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/kafka.iml" filepath="$PROJECT_DIR$/.idea/kafka.iml" />
+    </modules>
+  </component>
+</project>

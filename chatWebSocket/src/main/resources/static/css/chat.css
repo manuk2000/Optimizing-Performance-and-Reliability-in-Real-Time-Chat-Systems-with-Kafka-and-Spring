@@ -1,0 +1,75 @@
+/* Chat Container */
+.chat-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Chat Header */
+.chat-header {
+    margin-bottom: 20px;
+}
+
+.chat-header h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+/* Connecting */
+.connecting {
+    font-style: italic;
+    color: #999;
+    margin-bottom: 20px;
+}
+
+/* Message Area */
+#messageArea {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Message Input Form */
+#messageForm {
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.input-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-group input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.input-group button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+body{
+    color: white;
+}
+.input-group button.primary:hover {
+    background-color: #0056b3;
+}
+body{
+
+    background: url("../images/r7aURVPPbwM.jpg") no-repeat  ;
+    background-size: cover;
+}
